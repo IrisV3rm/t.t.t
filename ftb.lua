@@ -255,7 +255,6 @@ local function CheckForClone(Checked, Table)
     end
 
     for Value, Count in next, Checked do
-        warn(Count)
         if type(Value) == "table" and Count <= 3 or Count ~= TC then
             continue;
         end
